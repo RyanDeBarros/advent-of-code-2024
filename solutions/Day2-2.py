@@ -30,7 +30,7 @@ def less_than_two_errors(nums):
 
 safe_counter = 0
 
-with open('../inputs/Day2.txt') as file:
+with open("../inputs/Day2.txt", 'r') as file:
     for line in file:
         if less_than_two_errors([int(num) for num in line.split(' ')]):
             safe_counter += 1

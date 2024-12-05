@@ -19,7 +19,7 @@ def is_safe(nums):
 
 safe_counter = 0
 
-with open('../inputs/Day2.txt') as file:
+with open("../inputs/Day2.txt", 'r') as file:
     for line in file:
         if is_safe([int(num) for num in line.split(' ')]):
             safe_counter += 1
